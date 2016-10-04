@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>My Todo List</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
 	<script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<!-- elemento che conterrà il tutto -->
 	<div id="container">
-		<h1>To-Do List</h1>
-		<input type="text">
+		<h1>To-Do List <i class="fa fa-plus" aria-hidden="true"></i></h1>
+		<input type="text" placeholder="Aggiungi un Nuovo Todo">
 		<!-- elenco todos -->
 		<ul>
-			<li><span>X</span> Visita Dottore</li>
-			<li><span>X</span> Vai dal fruttivendolo</li>
-			<li><span>X</span> Paga la Bolletta</li>
+			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Visita Dottore</li>
+			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Vai dal fruttivendolo</li>
+			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Paga la Bolletta</li>
 		</ul>
 	</div>
 	<script type="text/javascript" src="assets/js/todos.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-83657812-9', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
