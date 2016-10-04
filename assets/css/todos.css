@@ -1,0 +1,13 @@
+#container {
+	width: 360px;
+	margin: 0 auto;
+	border: 2px solid gray;
+}
+
+/*
+classe che rappresenta un todo fatto
+*/
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
