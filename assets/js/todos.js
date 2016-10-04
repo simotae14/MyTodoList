@@ -25,6 +25,10 @@ $("input[type='text']").keypress(function(event){
 		$("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
 		// e poi resetto l'input
 		$(this).val("");
-
 	}
+});
+
+/* evento click sul plus */
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle("slow");
 });
