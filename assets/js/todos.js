@@ -22,7 +22,7 @@ $("input[type='text']").keypress(function(event){
 		// estraggo il testo del nuovo todo dall'input 
 		var todoText = $(this).val();
 		//e creo un nuovo li e aggiungilo all'ul
-		$("ul").append("<li><span>X</span> " + todoText + "</li>");
+		$("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
 		// e poi resetto l'input
 		$(this).val("");
 
